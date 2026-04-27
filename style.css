@@ -267,7 +267,7 @@ h2 {
   font-weight: 800;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .header-inner,
   .hero-content {
     grid-template-columns: 1fr;
@@ -301,4 +301,67 @@ h2 {
   .hero-card {
     margin-top: 35px;
   }
+}
+.max-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #c4b5fd, #e9d5ff);
+  color: #4b3f63;
+  padding: 14px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(160,130,220,0.3);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.max-btn:hover {
+  transform: scale(1.05);
+}
+.max-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #9b6fe8, #c49cff);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(155,111,232,0.3);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.max-btn:hover {
+  transform: scale(1.05);
+}
+.max-btn,
+.vk-btn {
+  position: fixed;
+  right: 25px;
+  padding: 14px 22px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.max-btn {
+  bottom: 25px;
+  background: linear-gradient(135deg, #9b6fe8, #c49cff);
+}
+
+.vk-btn {
+  bottom: 80px;
+  background: linear-gradient(135deg, #4c75a3, #5b88bd);
+}
+
+.max-btn:hover,
+.vk-btn:hover {
+  transform: scale(1.05);
 }
