@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fbf7ff;
+  color: #3f2d56;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.header {
+  background: #ffffff;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 6px 20px rgba(130, 85, 180, 0.15);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #7c4dcc;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+nav a {
+  color: #4c3268;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 800;
+}
+
+nav a:hover {
+  color: #9a6ee8;
+}
+
+.hero {
+  background: linear-gradient(135deg, #eadcff, #fff3fb);
+  padding: 90px 0;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.instagram {
+  display: inline-block;
+  background: white;
+  color: #8a5be0;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 52px;
+  color: #7548c7;
+  line-height: 1.1;
+  margin-bottom: 12px;
+  font-weight: 900;
+}
+
+h2 {
+  color: #7548c7;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 900;
+}
+
+.hero h2 {
+  text-align: left;
+  color: #4c3268;
+  font-size: 28px;
+}
+
+.hero-text {
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #8f5ee8, #c69cff);
+  color: white;
+  padding: 15px 32px;
+  border-radius: 35px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(143, 94, 232, 0.35);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.hero-card img,
+.photo-card img {
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 12px 35px rgba(116, 72, 199, 0.25);
+}
+
+.section {
+  padding: 75px 0;
+}
+
+.purple {
+  background: #f0e7ff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card,
+.big-card,
+.contact-box,
+.photo-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 28px;
+  box-shadow: 0 10px 28px rgba(116, 72, 199, 0.14);
+}
+
+.card h3,
+.big-card h3 {
+  color: #7548c7;
+  font-size: 23px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+.card p,
+.big-card p,
+.big-card li {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.info span {
+  background: #ffffff;
+  color: #5b3c80;
+  padding: 14px 22px;
+  border-radius: 22px;
+  font-weight: 900;
+  box-shadow: 0 8px 20px rgba(116, 72, 199, 0.14);
+}
+
+.big-card {
+  max-width: 900px;
+  margin: 0 auto 25px;
+}
+
+.big-card ul {
+  margin: 18px 0 18px 25px;
+}
+
+.second {
+  margin-top: 25px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.photo-card {
+  text-align: center;
+}
+
+.photo-card p {
+  margin-top: 15px;
+  color: #7548c7;
+  font-weight: 900;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 550px;
+  margin: 0 auto 30px;
+}
+
+.contact-box p {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.contact-box a {
+  color: #7548c7;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.form {
+  max-width: 520px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form select {
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid #d8c5f7;
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #9a6ee8;
+}
+
+#message {
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.footer {
+  background: #7c4dcc;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .header-inner,
+  .hero-content {
+    grid-template-columns: 1fr;
+    display: block;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    text-align: center;
+    font-size: 23px;
+  }
+
+  .cards,
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    margin-top: 35px;
+  }
+}
